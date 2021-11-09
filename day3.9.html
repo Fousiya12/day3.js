@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>object method</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="mark"></h1>
+        <h2 id="total"></h2>
+        <script>
+            const student={Name:"Tom:", Rollno: "25:", Mathsmark: "60/100:", Sciencemark: "88/100:", Englishmark: "95/100:"};
+            document.getElementById("mark").innerHTML=student["Name"]  + student["Rollno"]+ student["Mathsmark"]+ student["Sciencemark"]+ student["Englishmark"];
+            function totalmark(Mathsmark, Sciencemark,Englishmark) {
+             return Mathsmark + Sciencemark + Englishmark;
+            }
+            document.getElementById("total").innerHTML = totalmark(60, 88,95);
+
+        </script>
+    </body>
+</html>

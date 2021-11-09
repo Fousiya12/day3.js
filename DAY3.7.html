@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>session2</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <h2 id="dtf"></h2>
+        <script>
+            const person={
+                firstName: "Tom", lastName: "Louis", id: 6723,
+                fullName: function(){
+                    return person.firstName+ "" + person.lastName+ "" +person.id
+                }
+            };
+            document.getElementById("dtf").innerHTML=person.fullName();
+        </script>
+    </body>
+</html>

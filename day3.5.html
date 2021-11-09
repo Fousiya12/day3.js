@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+        <html>
+            <head>
+                <title>Java Scipt</title>
+                <meta name="viewport" content="width=device-width;initial-scale=1.4">
+            </head>
+            <body>
+                <h1 id="trainee"></h1>
+                <h2 id="toy"></h2>
+                <h1 id="fnc"></h1>
+            <script>
+            const toys=['car','doll','ball'];
+            const trainees={traineename:'Ayisha:',education:'BTech:',joiningdate:'10/10/2021:',location:'Banglore'};
+            document.getElementById('trainee').innerHTML=trainees.traineename+ trainees.education+ trainees.joiningdate+ trainees.location;
+            document.getElementById('toy').innerHTML=toys;
+            function add2numbers(no1,n02){
+               // return no1+no2;
+                let res= no1+no2;
+                return res;
+             }
+             let sum= add2numbers(12,45);
+             document.getElementById("fnc").innerHTML= "Total = " +sum;
+            </script>
+            </body>
+        </html>

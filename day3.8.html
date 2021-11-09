@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>string variable</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="s1"></h1>
+        <h1 id="s2"></h1>
+        <h3 id="s3"></h3>
+        <h4 id="s4"></h4>
+        <h5 id="s5"></h5>
+        <h6 id="s6"></h6>
+        <h7 id="s7"></h7>
+        <script>
+            let str="JavaScript strings are used for 'storing' and 'manipulating' text.";
+            let str1="concat joins two or more strings";
+            let sl=str.concat(str1);
+            document.getElementById("s1").innerText=str;
+            document.getElementById("s2").innerText=str.length;
+            document.getElementById("s3").innerHTML=str.slice(32,42);
+            document.getElementById("s4").innerHTML=str.substring(11,19);
+            document.getElementById("s5").innerHTML=str.substr(46,59);
+            document.getElementById("s6").innerHTML=str.replace("manipulating","operating");
+            document.getElementById("s7").innerHTML=sl;
+            </script>
+    </body>
+</html>
